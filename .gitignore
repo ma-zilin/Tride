@@ -22,6 +22,9 @@ worktrees/
 .trae/skill-validation/
 .trae/.skill-install.lock
 
+# 各角色的计划与方案草案（本地保留，不提交）
+.plans/
+
 # 未整理、未脱敏的原始证据
 证据材料/待整理/
 证据材料/原始截图/
