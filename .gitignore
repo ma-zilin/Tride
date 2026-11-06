@@ -1,0 +1,27 @@
+
+# 密钥与本地配置
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+*.pem
+*.key
+
+# 开发环境与缓存
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+node_modules/
+
+# 工作副本、技能备份与隔离演练
+.worktrees/
+worktrees/
+.trae/skill-backups/
+.trae/skill-validation/
+.trae/.skill-install.lock
+
+# 未整理、未脱敏的原始证据
+证据材料/待整理/
+证据材料/原始截图/
