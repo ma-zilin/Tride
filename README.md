@@ -27,36 +27,52 @@ None of these are implemented yet. They describe the first-release scope and are
 
 **Plan and organize**
 
-- Today overview: today's todos, upcoming schedule, current timer and quick add in one place.
-- Lightweight GTD structure: inbox, projects, next actions, waiting for, someday/maybe, calendar and completed.
+- Lightweight GTD structure: inbox, projects, next actions, waiting for, someday/maybe, calendar and completed, with a half-screen GTD selector for switching the current list.
 - Tags, complete/abandon/delete actions, and a completion rate based on finished versus abandoned items.
-- Kanban and quadrant views over the same todo data; kanban columns can be customised.
+- A standard todo page grouped by project, with selectable classification and sorting for each GTD module.
 
 **Schedule**
 
-- Built-in calendar with day, three-day and week views, showing class schedule, both sources combined, or regular events only.
-- Import a class schedule from WakeUp CSV exported by existing school tools, with a preview and validation step before import.
-- Recurring events (daily or selected weekdays, with an end date) and multiple reminders per item.
+- Built-in calendar with day, three-day and week views, plus source filtering for class schedule, both sources combined, or regular events only.
+- Schedule tag filtering, with "Class" as the default tag for imported classes and "No tag" as the default otherwise.
+- Real class schedule import from a school source; the technical path is still to be decided, and import provides a preview and validation step.
+- Recurring events (daily or selected weekdays, with an end date) with three edit/delete scopes: this occurrence, this and following, or the whole series.
+- Multiple reminders per event, plus lightweight reminders at a time boundary or review time.
 
 **Time tracking**
 
-- Category-based time logs with an optional linked task; chronological view, later edits and backfilled entries.
-- Two exclusive timing modes: single activity and parallel activities, with an explicit choice when switching.
-- Daily time distribution and statistics for a day, month, year or custom range.
+- Two-level category time logs with an optional linked task, newest-first records, later edits and backfilled entries, and a daily distribution.
+- Timing starts when a category is tapped; tapping the active category on the timer bar ends the entry and saves it. Single-activity and parallel modes are exclusive, with parallel as the default.
+- Statistics for a day, month, year or custom range, including untracked time.
 
 **AI assistance**
 
+- A full-screen AI page, with long-press on the AI entry for quick input; one conversation shares the same draft, page context is not attached automatically, and there are no attachments.
 - Query real data and create or adjust schedules through conversation; the first write of each operation type requires confirmation.
 - Review time logs and completion status over a period and suggest next steps grounded in that data.
-- Remember personal preferences only after confirmation, and undo the most recent batch of AI changes to todos and schedules.
+- Analyse the share of todo tags to show where attention goes.
+- Remember personal preferences only after confirmation.
+- Keep the DeepSeek API key in the system secure storage; AI sessions are stored locally and can be cleared.
 
-**Data**
+**Navigation and editing**
 
-- Backup and restore.
+- Bottom navigation has four fixed entries: todo, schedule, log and AI; entries cannot be hidden or reordered, and settings opens from the top of each primary page.
+- Details open in a half-screen panel and each field is saved as it is edited; new items are created only by an explicit create action; item actions use anchored menus, and choices open in a bottom panel.
+
+## Planned for Later
+
+These are outside the first-release scope and are not implemented yet.
+
+- Quadrant view: positions are assigned automatically from due date and priority by default; they can be adjusted manually, and AI changes them only after authorisation.
+- Undo of the most recent batch of AI changes to todos and schedules.
+- Backup and restore, including the handling of sensitive data.
+- Rescheduling after a repeated class-schedule import.
+- Dragging todos onto the schedule to create or move events.
+- Richer statistics and advanced charts.
 
 ## Screenshots
 
-There are no screenshots yet, because the app has no runnable build. This section will show the today overview, the kanban and quadrant views, and the time log once they are available.
+There are no screenshots yet, because the app has no runnable build. This section will show the todo list, the calendar, the log and the AI page once they are available.
 
 ## Getting Started
 
@@ -90,14 +106,16 @@ There is no usable version yet, and no usage instructions can be given. The main
 
 | Document | Contents |
 | --- | --- |
+| [docs/作业要求.md](docs/作业要求.md) | Course requirements and grading criteria (Chinese) |
 | [docs/产品构想.md](docs/产品构想.md) | Product vision, decisions and first-release scope (Chinese) |
+| [docs/需求基线.md](docs/需求基线.md) | Requirements baseline v1.4: scope and acceptance criteria (Chinese) |
 | [docs/开发架构设计.md](docs/开发架构设计.md) | Development workflow, roles, verification and evidence rules (Chinese) |
 
-Other files under `docs/` are internal working notes and are intentionally not listed here.
+`docs/任务进度.md` and `docs/项目初始化工作纪要.md` are internal process records and are not listed here.
 
 ## Roadmap
 
-Future directions, not commitments and without dates: bring the workflow to university students; desktop and cross-device sync; in-app academic calendar login; richer statistics and charts; external calendar integration.
+Future directions, not commitments and without dates: bring the workflow to university students; desktop and cross-device sync; in-app academic calendar login; external calendar integration.
 
 ## Contributing
 
