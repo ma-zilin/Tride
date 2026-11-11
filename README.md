@@ -56,6 +56,7 @@ None of these are implemented yet. They describe the first-release scope and are
 
 - Bottom navigation has four fixed entries: todo, schedule, log and AI; entries cannot be hidden or reordered, and settings opens from the top of each primary page.
 - Details open in a half-screen panel and each field is saved as it is edited; new items are created only by an explicit create action; item actions use anchored menus, and choices open in a bottom panel.
+- Android predictive back is supported: the system back gesture or back key previews the previous page before completing, it is enabled by default and can be turned off in settings, and devices without support fall back to normal back.
 
 ## Planned for Later
 
@@ -66,6 +67,7 @@ These are outside the first-release scope and are not implemented yet.
 - Backup and restore, including the handling of sensitive data.
 - Rescheduling after a repeated class-schedule import.
 - Dragging todos onto the schedule to create or move events.
+- Dynamic Island / system capsule timing: OriginOS is supported first; it shows only the category and elapsed-time summary, a tap returns to the log page, and timing cannot be switched or ended inside the island.
 - Richer statistics and advanced charts.
 
 ## Screenshots
@@ -105,9 +107,9 @@ There is no usable version yet, and no usage instructions can be given. The main
 | Document | Contents |
 | --- | --- |
 | [docs/作业要求.md](docs/作业要求.md) | Course requirements and grading criteria (Chinese) |
-| [docs/需求分析指导.md](docs/需求分析指导.md) | Requirements analysis guidance; does not add grading criteria (Chinese) |
+| [docs/需求分析指导.md](docs/需求分析指导.md) | Requirements analysis guide and standards (advisory, no added grading criteria; Chinese) |
 | [docs/产品构想.md](docs/产品构想.md) | Product vision, decisions and first-release scope (Chinese) |
-| [docs/需求基线.md](docs/需求基线.md) | Requirements baseline v2.0: scope and acceptance criteria (Chinese) |
+| [docs/需求基线.md](docs/需求基线.md) | Requirements baseline v2.2: scope and acceptance criteria (Chinese) |
 | [docs/开发架构设计.md](docs/开发架构设计.md) | Development workflow, roles, verification and evidence rules (Chinese) |
 
 `docs/任务进度.md` and `docs/项目初始化工作纪要.md` are internal process records and are not listed here.
